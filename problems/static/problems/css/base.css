@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #D4D4D4;
+    margin-top: -8px;
+}
+
+.logo-wrap {
+    display: flex;
+    flex-grow: 0;
+    border-right: 1px solid #D4D4D4;
+    height: 100%;
+    margin-right: 50px;
+}
+
+.logo {
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.nav-button {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.notifications, .profile {
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.profile-bar {
+    flex-grow: 0;
+}

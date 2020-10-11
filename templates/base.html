@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static "problems/css/base.css" %}">
+</head>
+<body>
+<header>
+    <div class="logo-wrap">
+        <h1 class="logo">MathPro</h1>
+    </div>
+    <nav class="nav-bar">
+        <a class="nav-button" href="#">Задачи</a>
+        <a class="nav-button" href="#">Соревнования</a>
+        <a class="nav-button" href="#">Новости</a>
+    </nav>
+
+    <div class="profile-bar">
+        <button class="notifications">
+            <img src="{% static "problems/img/notification-bell.svg" %}" alt="notifications" height="27" width="30">
+        </button>
+        <button class="profile">
+            <img src="{% static "problems/img/profile-avatar.svg" %}" alt="profile" height="30" width="30">
+        </button>
+    </div>
+</header>
+</body>
+</html>
