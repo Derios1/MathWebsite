@@ -7,23 +7,26 @@
 
 {% block problems %}
 
-    <div class="problems-container">
-        <div class="problems-info">
-            <div class="category-list">
-                <a class="category" href="{% url "problems" %}?category=0">Все</a>
-                {% for category in categories %}
-                    <a class="category" href="{% url "problems" %}?category={{ category.pk }}">{{ category.title }}</a>
-                {% endfor %}
-            </div>
+    <div class="problems-info">
+        <div class="problems-container">
+            <h1 class="problems-page-title">Задачи</h1>
             <div class="problems-list">
                 {% include "problems/problems_list.html" %}
             </div>
         </div>
-
-        <div class="personal-info">
-            <h4>Решено: 1</h4>
-            <h4>Место в рейтинге: 1</h4>
+        <div class="filters-container">
+            <h1 class="problems-filter-title">Фильтры</h1>
+            <form method="post" class="filters" action="">
+                {% for category in categories %}
+                    {% csrf_token %}
+                    <div class="category">
+                        <input type="checkbox" class="category-checkbox" id={{ category.pk }} name="categories"
+                               value={{ category.pk }}>
+                        <label for=name="categories">{{ category.title }}</label>
+                    </div>
+                {% endfor %}
+                <button class="submit-button" type="submit">Применить</button>
+            </form>
         </div>
     </div>
-
 {% endblock %}

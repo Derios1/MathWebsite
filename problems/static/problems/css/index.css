@@ -1,39 +1,79 @@
-.problems-container {
+.problems-info {
     display: flex;
     justify-content: flex-start;
 }
 
-.category-list {
+.problems-container {
     display: flex;
-    justify-content: center;
-    padding-top: 15px;
-}
-
-.problems-info {
+    flex-direction: column;
     flex-grow: 1;
 }
 
-.category {
+.problems-list {
     display: flex;
-    margin-right: 15px;
+    flex-direction: column;
+    background-color: white;
+    margin-right: 60px;
+    margin-left: 10%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.problems-page-title {
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.problem-description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.problem-title {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 5px;
+    padding-left: 20px;
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
 
-.personal-info {
-    padding-right: 40px;
+.complexity {
+    margin-right: 20px;
+    font-size: 15px;
 }
 
-.problem-description {
-    padding-top: 30px;
-    padding-left: 30px;
-    font-family: 'Roboto', sans-serif;
+.details-button {
+    margin-right: 5px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
 }
 
-.problem-title {
-    font-size: 20px;
-    color: cornflowerblue;
-    text-decoration: none;
+.filters-container {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    margin-right: 10%;
 }
+
+.problems-filter-title {
+    padding-right: 30px;
+}
+
+.filters {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    padding: 20px;
+}
+
 

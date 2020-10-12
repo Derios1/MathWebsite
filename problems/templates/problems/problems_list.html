@@ -1,6 +1,7 @@
 {% for problem in problems %}
     <div class="problem-description">
         <a class="problem-title" href="#">{{ problem.title }}</a>
-        <h5 class="complexity">Сложность: {{ problem.complexity }}</h5>
+        <p class="complexity">Сложность: {{ problem.complexity }}</p>
+        <button class="details-button">Подробнее...</button>
     </div>
 {% endfor %}

@@ -7,9 +7,10 @@ def problems_view(request):
     problems = Problem.objects.all().annotate(Count('categories'))
     categories = Category.objects.all()
 
-    category_pk = request.GET.get('category')
-    if category_pk is not None and category_pk != '0':
-        problems = problems.filter(categories__pk=category_pk)
+    if request.method == "POST":
+        checked_categories = list(map(int, request.POST.getlist('categories')))
+        if len(checked_categories):
+            problems = problems.filter(categories__pk__in=checked_categories)
 
     return render(request, "problems/index.html",
                   context={'problems': problems,
