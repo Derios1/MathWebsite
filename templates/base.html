@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="{% static "problems/css/base.css" %}">
+    {% block styles %}{% endblock %}
 </head>
 <body>
 <header>
@@ -27,5 +28,10 @@
         </button>
     </div>
 </header>
+
+<div class="content">
+    {% block problems %}{% endblock %}
+</div>
+
 </body>
 </html>

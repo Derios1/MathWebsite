@@ -1,1 +1,29 @@
 {% extends "base.html" %}
+{% load static %}
+{% block title %} Задачи {% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static "problems/css/index.css" %}">
+{% endblock %}
+
+{% block problems %}
+
+    <div class="problems-container">
+        <div class="problems-info">
+            <div class="category-list">
+                <a class="category" href="{% url "problems" %}?category=0">Все</a>
+                {% for category in categories %}
+                    <a class="category" href="{% url "problems" %}?category={{ category.pk }}">{{ category.title }}</a>
+                {% endfor %}
+            </div>
+            <div class="problems-list">
+                {% include "problems/problems_list.html" %}
+            </div>
+        </div>
+
+        <div class="personal-info">
+            <h4>Решено: 1</h4>
+            <h4>Место в рейтинге: 1</h4>
+        </div>
+    </div>
+
+{% endblock %}

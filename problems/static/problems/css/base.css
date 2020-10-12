@@ -1,9 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     display: flex;
     align-items: center;
     text-align: justify;
     justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
     border-bottom: 1px solid #D4D4D4;
     margin-top: -8px;
 }

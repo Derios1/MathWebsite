@@ -6,6 +6,7 @@ class Category(models.Model):
 
 
 class Problem(models.Model):
+    title = models.CharField(max_length=128, default="")
     text = models.TextField()
     categories = models.ManyToManyField(Category, related_name="problems")
     complexity = models.IntegerField(default=1)
