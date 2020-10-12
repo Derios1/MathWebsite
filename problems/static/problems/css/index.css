@@ -51,6 +51,7 @@
     border: none;
     cursor: pointer;
     font-size: 15px;
+    color: cornflowerblue;
 }
 
 .filters-container {
@@ -74,6 +75,14 @@
 
 .category {
     padding: 20px;
+}
+
+.submit-button {
+    padding: 5px;
+    margin: 5px 40px 10px 40px;
+    font-weight: bold;
+    border: none;
+    background-color: lightblue;
 }
 
 
