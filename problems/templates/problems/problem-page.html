@@ -7,14 +7,18 @@
 
 {% block problems %}
     <h1 class="problem-title">{{ problem.title }}</h1>
-
     <div class="problem-info">
         <p class="problem-text">{{ problem.text }}</p>
 
-        <form class="problem-answer">
-            <p class="answer-label">Ответ:</p>
-            <label for="answer"></label><input type="text" id="answer">
+        <form class="problem-answer" method="post" action="">
+            {% csrf_token %}
+            <p class="answer-label">Ответ: {% if answer_status == 1 %}
+                <img src="{% static "problems/img/true.svg" %}" alt="Верно" height="20"
+                     width="20">{% elif answer_status == 0 %}
+                <img src="{% static "problems/img/wrong.svg" %}" alt="Неверно" height="20" width="20">{% endif %}</p>
+            <label for="answer"></label><input type="text" id="answer" name="formula">
             <button type="submit" class="submit-button">Отправить</button>
         </form>
+
     </div>
 {% endblock %}

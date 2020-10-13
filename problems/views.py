@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from problems.models import Problem, Category
 from django.db.models import Count
+from Parser.parser import Parser
 
 
 def problems_view(request):
@@ -20,5 +21,14 @@ def problems_view(request):
 
 def problem_page_view(request, id):
     problem = Problem.objects.get(pk=id)
+    answer_status = -1
+
+    if request.method == "POST":
+        text = request.POST["formula"]
+
+        input_answer = Parser(text, problem.symbols)
+        answer = Parser(problem.answer, problem.symbols)
+        answer_status = input_answer == answer
+
     return render(request, "problems/problem-page.html",
-                  context={'problem': problem})
+                  context={'problem': problem, 'answer_status': answer_status})

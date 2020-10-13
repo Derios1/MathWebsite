@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afdb8ecf-8b62-492f-9b60-e4458be2b52f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Math.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Math.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parser/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problems/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/problems/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problems/static/problems/css/problem-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/problems/static/problems/css/problem-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problems/templates/problems/problem-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/problems/templates/problems/problem-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problems/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/problems/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +44,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Coursera/Blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/problems/templates/problems" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Programmer\Python\Math\problems\templates\problems" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Programmer\Python\Math\problems\templates\problems" />
       <recent name="G:\Programmer\Python\Math\problems\static\problems\css" />
@@ -88,7 +98,7 @@
       <workItem from="1602439668663" duration="791000" />
       <workItem from="1602442625794" duration="7920000" />
       <workItem from="1602520458092" duration="12011000" />
-      <workItem from="1602597124684" duration="6908000" />
+      <workItem from="1602597124684" duration="15729000" />
     </task>
     <servers />
   </component>
@@ -104,38 +114,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602448063745" />
-    <state width="1493" height="162" key="GridCell.Tab.0.bottom" timestamp="1602615951664">
+    <state width="1493" height="162" key="GridCell.Tab.0.bottom" timestamp="1602625997103">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602615951664" />
-    <state width="1493" height="162" key="GridCell.Tab.0.center" timestamp="1602615951664">
+    <state width="1493" height="162" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602625997103" />
+    <state width="1493" height="162" key="GridCell.Tab.0.center" timestamp="1602625997102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602615951664" />
-    <state width="1493" height="162" key="GridCell.Tab.0.left" timestamp="1602615951663">
+    <state width="1493" height="162" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602625997102" />
+    <state width="1493" height="162" key="GridCell.Tab.0.left" timestamp="1602625997102">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602615951663" />
-    <state width="1493" height="162" key="GridCell.Tab.0.right" timestamp="1602615951664">
+    <state width="1493" height="162" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602625997102" />
+    <state width="1493" height="162" key="GridCell.Tab.0.right" timestamp="1602625997103">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602615951664" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1602537545717">
+    <state width="1493" height="162" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602625997103" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1602621180152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602537545717" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1602537545717">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602621180152" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1602621180152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602537545717" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1602537545717">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602621180152" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1602621180151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602537545717" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1602537545717">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602621180151" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1602621180152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602537545717" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602621180152" />
     <state x="609" y="134" key="RollbackChangesDialog" timestamp="1602449342401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -144,5 +154,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1602597145120" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Parser/parser.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
