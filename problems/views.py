@@ -22,6 +22,7 @@ def problems_view(request):
 def problem_page_view(request, id):
     problem = Problem.objects.get(pk=id)
     answer_status = -1
+    text = ''
 
     if request.method == "POST":
         text = request.POST["formula"]
@@ -31,4 +32,4 @@ def problem_page_view(request, id):
         answer_status = input_answer == answer
 
     return render(request, "problems/problem-page.html",
-                  context={'problem': problem, 'answer_status': answer_status})
+                  context={'problem': problem, 'answer_status': answer_status, 'prev_text': text})

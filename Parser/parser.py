@@ -8,7 +8,7 @@ class Parser:
                 exec(symbols + " = " + "sp.Symbol('{}')".format(symbol))
             self.expr = eval(expr)
             self.is_expr = str(type(self.expr)) != "<class 'int'>"
-        except NameError:
+        except (SyntaxError, NameError):
             self.expr = None
             self.is_expr = False
 

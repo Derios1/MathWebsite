@@ -16,7 +16,8 @@
                 <img src="{% static "problems/img/true.svg" %}" alt="Верно" height="20"
                      width="20">{% elif answer_status == 0 %}
                 <img src="{% static "problems/img/wrong.svg" %}" alt="Неверно" height="20" width="20">{% endif %}</p>
-            <label for="answer"></label><input type="text" id="answer" name="formula">
+            <label for="answer"></label><input type="text" id="answer" name="formula" value="{{ prev_text }}">
+
             <button type="submit" class="submit-button">Отправить</button>
         </form>
 
