@@ -16,3 +16,9 @@ def problems_view(request):
                   context={'problems': problems,
                            'categories': categories
                            })
+
+
+def problem_page_view(request, id):
+    problem = Problem.objects.get(pk=id)
+    return render(request, "problems/problem-page.html",
+                  context={'problem': problem})

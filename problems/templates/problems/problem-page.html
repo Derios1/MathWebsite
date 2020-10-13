@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} {{ problem.title }} {% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static "problems/css/problem-page.css" %}">
+{% endblock %}
+
+{% block problems %}
+    <h1 class="problem-title">{{ problem.title }}</h1>
+
+    <div class="problem-info">
+        <p class="problem-text">{{ problem.text }}</p>
+
+        <form class="problem-answer">
+            <p class="answer-label">Ответ:</p>
+            <label for="answer"></label><input type="text" id="answer">
+            <button type="submit" class="submit-button">Отправить</button>
+        </form>
+    </div>
+{% endblock %}

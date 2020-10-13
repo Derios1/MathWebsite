@@ -23,6 +23,10 @@ header {
     border-right: 1px solid #D4D4D4;
 }
 
+.logo-ref {
+    text-decoration: none;
+    color: black;
+}
 .logo {
     padding-right: 15px;
     padding-left: 15px;

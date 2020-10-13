@@ -11,10 +11,10 @@
 <body>
 <header>
     <div class="logo-wrap">
-        <h1 class="logo">MathPro</h1>
+        <h1 class="logo"><a class="logo-ref" href="{% url "problems" %}">MathPro</a></h1>
     </div>
     <nav class="nav-bar">
-        <a class="nav-button" href="#">Задачи</a>
+        <a class="nav-button" href="{% url "problems" %}">Задачи</a>
         <a class="nav-button" href="#">Соревнования</a>
         <a class="nav-button" href="#">Новости</a>
     </nav>
