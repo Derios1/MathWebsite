@@ -58,3 +58,13 @@ header {
     height: 100%;
     padding-right: 30px;
 }
+
+.login-bar {
+    margin-right: 5px;
+}
+.log-in, .sign-up {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+}

@@ -9,6 +9,8 @@
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 
+
+
     </script>
 
     <script type="text/javascript"
@@ -27,21 +29,25 @@
         <a class="nav-button" href="#">Новости</a>
     </nav>
 
-    <div class="profile-bar">
-        <a href="#" class="notifications">
-            <img src="{% static "problems/img/notification-bell.svg" %}" alt="notifications" height="27" width="30">
-        </a>
-        {% if user.is_authenticated %}
+    {% if user.is_authenticated %}
+        <div class="profile-bar">
+            <a href="#" class="notifications">
+                <img src="{% static "problems/img/notification-bell.svg" %}" alt="notifications" height="27" width="30">
+            </a>
             <a href="{% url "profile" %}" class="profile">
                 <img src="{% static "problems/img/profile-avatar.svg" %}" alt="profile" height="30" width="30">
             </a>
-        {% else %}
-            <a href="{% url "login" %}" class="profile">
-                <img src="{% static "problems/img/profile-avatar.svg" %}" alt="profile" height="30" width="30">
+        </div>
+    {% else %}
+        <div class="login-bar">
+            <a href="{% url "login" %}" class="log-in">
+                Войти
             </a>
-        {% endif %}
-
-    </div>
+            <a href="{% url "register" %}" class="sign-up">
+                Зарегистрироваться
+            </a>
+        </div>
+    {% endif %}
 </header>
 
 <div class="content">
