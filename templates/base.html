@@ -4,10 +4,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static "problems/css/base.css" %}">
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
     </script>
 
     <script type="text/javascript"
@@ -27,17 +28,25 @@
     </nav>
 
     <div class="profile-bar">
-        <button class="notifications">
+        <a href="#" class="notifications">
             <img src="{% static "problems/img/notification-bell.svg" %}" alt="notifications" height="27" width="30">
-        </button>
-        <button class="profile">
-            <img src="{% static "problems/img/profile-avatar.svg" %}" alt="profile" height="30" width="30">
-        </button>
+        </a>
+        {% if user.is_authenticated %}
+            <a href="{% url "profile" %}" class="profile">
+                <img src="{% static "problems/img/profile-avatar.svg" %}" alt="profile" height="30" width="30">
+            </a>
+        {% else %}
+            <a href="{% url "login" %}" class="profile">
+                <img src="{% static "problems/img/profile-avatar.svg" %}" alt="profile" height="30" width="30">
+            </a>
+        {% endif %}
+
     </div>
 </header>
 
 <div class="content">
     {% block problems %}{% endblock %}
+    {% block content %}{% endblock %}
 </div>
 
 </body>

@@ -50,6 +50,7 @@ header {
     cursor: pointer;
     margin-right: 5px;
     background-color: white;
+    text-decoration: none;
 }
 
 .profile-bar {

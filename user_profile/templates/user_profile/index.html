@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Профиль {% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static "user_profile/index.css" %}">
+{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <p>{{ user.username }}</p>
+{% else %}
+    <p>Вы не вошли в систему.</p>
+{% endif %}
+{% endblock %}
