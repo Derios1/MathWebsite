@@ -2,13 +2,21 @@
 {% load static %}
 {% block title %} Профиль {% endblock %}
 {% block styles %}
-    <link rel="stylesheet" href="{% static "user_profile/index.css" %}">
+    <link rel="stylesheet" href="{% static "user_profile/css/index.css" %}">
 {% endblock %}
 
 {% block content %}
-{% if user.is_authenticated %}
-    <p>{{ user.username }}</p>
-{% else %}
-    <p>Вы не вошли в систему.</p>
-{% endif %}
+    {% if user.is_authenticated %}
+        <div class="profile-wrap">
+            <img src="{% static "user_profile/img/test_av.jpg" %}" alt="Ава" class="avatar" height="400" width="300">
+            <div class="profile-info">
+                <span class="name">{{ user.username }}</span>
+                <span class="rating">Рейтинг: {{ user.profile.rating }}, Задач решено: {{ solved }}</span>
+                <span class="bio-label">О себе:</span>
+                <span class="biography">{{ user.profile.bio }}</span>
+            </div>
+        </div>
+    {% else %}
+        <p>Вы не вошли в систему.</p>
+    {% endif %}
 {% endblock %}

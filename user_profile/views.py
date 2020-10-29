@@ -4,7 +4,11 @@ from user_profile.forms import RegisterForm
 
 
 def profile_view(request):
-    return render(request, "user_profile/index.html")
+    user = get_user(request)
+    if user.is_authenticated:
+        return render(request, "user_profile/index.html", {'solved': user.profile.solved_problems.count()})
+    else:
+        return redirect('register')
 
 
 def register_view(request):
@@ -14,8 +18,8 @@ def register_view(request):
             user = form.save()
             user.refresh_from_db()
             user.profile.bio = form.cleaned_data.get('bio')
+            user.profile.save()
             user.save()
-            # user = authenticate(username=user.username, password=raw_password)
             login(request, user, backend='django.contrib.auth.backends.ModelBackend')
             return redirect('problems')
     else:

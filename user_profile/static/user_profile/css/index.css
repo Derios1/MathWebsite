@@ -1,0 +1,37 @@
+.profile-wrap {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.avatar {
+    border-radius: 5px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.rating {
+   margin-bottom: 30px;
+}
+.bio-label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.biography {
+
+}
