@@ -1,4 +1,4 @@
-from django.forms import ModelForm, PasswordInput, EmailInput
+from django.forms import PasswordInput, EmailInput
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 import django.forms as forms
@@ -11,11 +11,11 @@ class RegisterForm(UserCreationForm):
     password1 = forms.CharField(
         label="Пароль",
         strip=False,
-        widget=forms.PasswordInput(attrs={'autocomplete': 'new-password'})
+        widget=PasswordInput(attrs={'autocomplete': 'new-password'})
     )
     password2 = forms.CharField(
         label="Повторите пароль",
-        widget=forms.PasswordInput(attrs={'autocomplete': 'new-password'}),
+        widget=PasswordInput(attrs={'autocomplete': 'new-password'}),
         strip=False
     )
 
