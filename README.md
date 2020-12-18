@@ -15,3 +15,7 @@
 + Рейтиновая система
 + Лента новостей и объявлений 
 + Соревнования
+
+## Скриншоты
+![alt text](https://i.ibb.co/Y3hBTBz/screen.png)
+![alt text](https://i.ibb.co/h8rZvCL/screen.png)
